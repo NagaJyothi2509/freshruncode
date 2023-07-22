@@ -119,7 +119,7 @@ const CreateContact = () => {
         </div>
         <input
           type="submit"
-          value="Add Contact"
+          value="https://cms-backend-tq04.onrender.com"
           className="btn btn-info my-2"
         />
       </form>
@@ -240,7 +240,7 @@ const CreateContact = () => {
         </div>
         <input
           type="submit"
-          value="Add Contact"
+          value="https://cms-backend-tq04.onrender.com"
           className="btn btn-info my-2"
         />
       </form>
