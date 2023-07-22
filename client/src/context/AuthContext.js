@@ -122,7 +122,7 @@ export const AuthContextProvider = ({ children }) => {
   // check if the user is logged in.
   const checkUserLoggedIn = async () => {
     try {
-      const res = await fetch(`http://localhost:8001/api/me`, {
+      const res = await fetch(`https://cms-backend-tq04.onrender.com/api/me`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -152,7 +152,7 @@ export const AuthContextProvider = ({ children }) => {
   // login request.
   const loginUser = async (userData) => {
     try {
-      const res = await fetch(`http://localhost:8001/api/login`, {
+      const res = await fetch(`https://cms-backend-tq04.onrender.com/api/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -177,7 +177,7 @@ export const AuthContextProvider = ({ children }) => {
   // register request.
   const registerUser = async (userData) => {
     try {
-      const res = await fetch(`http://localhost:8001/api/register`, {
+      const res = await fetch(`https://cms-backend-tq04.onrender.com/api/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

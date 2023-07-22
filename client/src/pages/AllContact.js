@@ -20,7 +20,7 @@ const AllContact = () => {
 
     (async () => {
       try {
-        const res = await fetch(`http://localhost:8001/api/mycontacts`, {
+        const res = await fetch(`https://cms-backend-tq04.onrender.com/api/mycontacts`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -51,7 +51,7 @@ const AllContact = () => {
   const deleteContact = async (id) => {
     if (window.confirm("Are you sure you want to delete this contact?")) {
       try {
-        const res = await fetch(`http://localhost:8001/api/delete/${id}`, {
+        const res = await fetch(`https://cms-backend-tq04.onrender.com/api/delete/${id}`, {
           method: "DELETE",
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

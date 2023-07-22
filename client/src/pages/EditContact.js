@@ -182,7 +182,7 @@ const EditContact = () => {
     event.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:8001/api/contact`, {
+      const res = await fetch(`https://cms-backend-tq04.onrender.com/api/contact`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -207,7 +207,7 @@ const EditContact = () => {
     async function fetchData() {
       try {
         setLoading(true);
-        const res = await fetch(`http://localhost:8001/api/contact/${id}`, {
+        const res = await fetch(`https://cms-backend-tq04.onrender.com/api/contact/${id}`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

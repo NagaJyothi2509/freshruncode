@@ -20,7 +20,7 @@ const ForgotPassword = () => {
 
     // Make an API call to your backend server to request password reset
     // Replace 'your_api_endpoint' with the actual endpoint for password reset
-    fetch("http://localhost:8001/reset-password", {
+    fetch("https://cms-backend-tq04.onrender.com/reset-password", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
